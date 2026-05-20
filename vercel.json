@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/oauth/token",
+      "destination": "https://osu.ppy.sh/oauth/token"
+    },
+    {
+      "source": "/api/v2/:match*",
+      "destination": "https://osu.ppy.sh/api/v2/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
